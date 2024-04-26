@@ -1,0 +1,350 @@
+* 36aecb2 - (HEAD -> hpeKalman, origin/hpeKalman) [temp] fully clear staled FLD result (3 days ago) <Changmin Yi>
+* 09ae5ab - [feat] add HPE Kalman test 1 (3 days ago) <Changmin Yi>
+* a95d214 - (origin/beta3-patch, beta3-patch) [refac] divide UpdateFD & Process_FD_* format (10 days ago) <Changmin Yi>
+| * a95bf05 - (origin/master, origin/HEAD) [chore] Update license expiration (3 days ago) <Changmin Yi>
+| * a80a570 - [bugfix] Drowsiness brightness index bug (4 weeks ago) <Changmin Yi>
+| * 7bb0486 - [feat] add saving commit version when build (5 weeks ago) <Changmin Yi>
+| * 9a6849e - [docs] version.cpp tab space fix (8 weeks ago) <Changmin Yi>
+| * 0edd9e0 - (tag: v1.1.0043) [feat] TestMode Calibration add (8 weeks ago) <Changmin Yi>
+| * ac951e8 - (tag: v1.1.0041) [feat] perclos parameter changed (9 weeks ago) <Changmin Yi>
+| * 6df4177 - (tag: v1.1.0039) [feat] MVT-9 ROI out & DDAW PERCLOS thres fix (4 months ago) <Changmin Yi>
+| * 17bd2bd - [feat] loosen input FPS policy (4 months ago) <Changmin Yi>
+| * de483c5 - [docs] version print fix (5 months ago) <Changmin Yi>
+| * b31000e - [feat] out of ROI FD turns off when MVT-9 (5 months ago) <Changmin Yi>
+| | * 93e2261 - (origin/dro) [bugfix] Modify Drowsiness Kalman Threshold Update (7 days ago) <yujin>
+| |/  
+|/|   
+* |   2bdb760 - (tag: v2.0-beta3.1) Merge branch 'PSR' into beta3-patch (2 weeks ago) <Changmin Yi>
+|\ \  
+* \ \   e8afa6c - Merge branch 'mergedEye' into beta3-patch (2 weeks ago) <Changmin Yi>
+|\ \ \  
+| * | | 6d382f0 - (origin/mergedEye, mergedEye) [bugfix] Modifying Kalman open Count Check values (2 weeks ago) <yujin>
+| * | | 67e385f - [feat] Add MVT-9 FD model (2 weeks ago) <yujin>
+* | | | e585dcd - [debug] fix Dis Duration print (2 weeks ago) <Changmin Yi>
+* | | | 9bb029e - [debug] fix Distraction print (2 weeks ago) <Changmin Yi>
+* | | | 5b2e3b1 - [feat] rollback Variance check for Dis Cal. (3 weeks ago) <Changmin Yi>
+* | | | 0fede23 - [debug] add time print for FaceID Request (3 weeks ago) <Changmin Yi>
+* | | | c97ebc9 - [debug] print FaceID request with color Debugtext (3 weeks ago) <Changmin Yi>
+* | | | fd154c9 - [bugfix] Seatbelt inf loop -> mv UpdateFD rcFace (3 weeks ago) <Changmin Yi>
+* | | | 67b258a - [debug] rm DebugTimeText (4 weeks ago) <Changmin Yi>
+| | | | * c1f0826 - (origin/PSRSunglasses) [bugfix] Fix : Not calculate PSR Duration issue (3 weeks ago) <yujin>
+| | | | * 7f07061 - [feat] Add PSR Sunglasses Detection feature (3 weeks ago) <yujin>
+| | | |/  
+| | |/|   
+| | * | ab6f9a6 - (origin/PSR, PSR) [bugfix] Fix Mask Duration variable name bug (3 weeks ago) <yujin>
+| |/ /  
+| * / 0db5b48 - [tune] Adjustment value change for uneven eyes (3 weeks ago) <yujin>
+|/ /  
+* | 2446fe7 - (tag: v2.0-beta3) [feat] dro duration yaw limit fix -> FD x robust (4 weeks ago) <Changmin Yi>
+* | 8892b91 - [bugfix] drowsiness duration force init bugfix (4 weeks ago) <Changmin Yi>
+* | 33f18fb - [debug] drowsiness debug print fix (4 weeks ago) <Changmin Yi>
+* | cd555c6 - [docs] version info fix <- v2.0-beta3 (4 weeks ago) <Changmin Yi>
+* | a11a853 - [debug] add Eye min/max for Drowsiness (4 weeks ago) <Changmin Yi>
+* | a3d8bf1 - [feat] Add Drowsiness Threshold Segmentation (4 weeks ago) <yujin>
+* | 92619e3 - [bugfix] iSearchRange_KalmanThres MAX_QUEUE -> 100 (4 weeks ago) <Changmin Yi>
+* | 8a7cb7e - [feat] use fixed 100 frame for Kalman Threshold (4 weeks ago) <Changmin Yi>
+* | 17833eb - [bugfix] min/max dist bug fix & min search bug fix (4 weeks ago) <Changmin Yi>
+* | 36bf986 - [bugfix] m_fThresKalmanClose = 0 pass issue solve (4 weeks ago) <Changmin Yi>
+* | dd005da - [feat] kalmanThres search range validation (4 weeks ago) <Changmin Yi>
+* | 690d52c - [bugfix] un-initialized kalman exclude (4 weeks ago) <Changmin Yi>
+* | f66b804 - [tune] DRO_R 0.01 (4 weeks ago) <Changmin Yi>
+* | 3855572 - [bugfix] peakAvg zero issue fix (4 weeks ago) <Changmin Yi>
+* | dde7fe8 - [bugfix] kalman future init fix & init 0 (4 weeks ago) <Changmin Yi>
+* | 636d7a2 - [feat] EAR min/max + ScaledEye mixed (4 weeks ago) <Changmin Yi>
+* | e4762c6 - [feat] rm m_fEyeAspectRatio -> eyeOpen change-able (4 weeks ago) <Changmin Yi>
+* | 6c8aa6b - (origin/ScaledEye, ScaledEye) [bugfix] Drowsiness brightness index bug (4 weeks ago) <Changmin Yi>
+* | 10ff82f - [feat] add saving commit version when build (4 weeks ago) <Changmin Yi>
+* | 27c8c77 - [feat] ScaledEye Threshold tuning v1 (5 weeks ago) <Changmin Yi>
+* | 69b759f - [feat] apply yaw-cosine adjustment (eye2) (5 weeks ago) <Changmin Yi>
+* | 95d2d9b - [feat] ScaledEye Drowsiness tuning v1 (5 weeks ago) <Changmin Yi>
+* | 9b43604 - [bugfix] FindHistogramPeak3 iMax < Histo_size (5 weeks ago) <Changmin Yi>
+* | 0d55deb - [feat] save EAR & print WarningAnalyze (6 weeks ago) <Changmin Yi>
+* | d1a6878 - [feat] old ScaledEye rollback (6 weeks ago) <Changmin Yi>
+* |   19a1b52 - Merge branch 'EARdro' into EARold (7 weeks ago) <Changmin Yi>
+|\ \  
+* | | affadc8 - [feat] change if 0/1 to run EAR old (7 weeks ago) <Changmin Yi>
+* | | bd81b69 - [docs] add result.h function explain comment (7 weeks ago) <Changmin Yi>
+| | | * 3357768 - (origin/EARdro) [tune] change DRO_Q 0.0005f -> 0.001f (5 weeks ago) <Changmin Yi>
+| | | * 7522e57 - [style] rm no-use var & fix comment FLD image save (5 weeks ago) <Changmin Yi>
+| | | * 9c3b3ac - [feat] Add Brightness Error Value Limitation (5 weeks ago) <yujin>
+| | | * 58567b8 - [feat] Add FLD Result Image Saving Feature (5 weeks ago) <yujin>
+| | | * c50815b - [feat] Modifying EAR Brightness Values (5 weeks ago) <yujin>
+| | |/  
+| |/|   
+| * | 22f0d00 - (EARdro) [feat] rm case-driven code for ProcessR.._Drowsiness (7 weeks ago) <Changmin Yi>
+| * | e59be28 - [docs] add review comments ProcessRes..Drowsiness (7 weeks ago) <Changmin Yi>
+| * | 31382fd - [bugfix] Solved DRO EAR Previous Threshold error (7 weeks ago) <yujin>
+| * | ee75ba2 - [refac] Move the variable (7 weeks ago) <yujin>
+| * | d66fa1d - [tune] Change initial values for the For loop (7 weeks ago) <yujin>
+| * | 90fc651 - [refac] Modifiying DRO functions (7 weeks ago) <yujin>
+|/ /  
+* | ce8964c - (dev) [refac] ProcessResult_DSM_FD_Drowsiness comment add (7 weeks ago) <Changmin Yi>
+* | 2ae5e82 - (origin/dev) [tune] for HPE rm 2 mouth point & add 2 chin point (7 weeks ago) <Changmin Yi>
+* | 3081901 - [docs] add comment for result func & var name i->f (7 weeks ago) <Changmin Yi>
+* | 2956e9f - [feat] add Performance tag for pre/sess/post (7 weeks ago) <Changmin Yi>
+* | 1910e26 - [tune] Update DRO variable initial value (7 weeks ago) <yujin>
+* |   74cee25 - Merge branch 'EARdro' into dev (7 weeks ago) <Changmin Yi>
+|\ \  
+| * | f74bcc8 - [docs] Commenting ROI Histogram functions (8 weeks ago) <yujin>
+| * | 9957afe - [FEAT] Add EAR Min/Max Drowsiness function (8 weeks ago) <yujin>
+* | | 3fa4d89 - (origin/onboard, onboard) [refac] FID unnecessary code, alloc, comment rm (8 weeks ago) <Changmin Yi>
+* | | 2173cd1 - [refac] un-paren. FID resize from Check_Faceid_Mode (8 weeks ago) <Changmin Yi>
+* | | 8051d98 - [feat] MD_ALG_NORM_FD flag check (8 weeks ago) <Changmin Yi>
+* | | 94c4920 - [debug] add debug print in Process_FD and FID (8 weeks ago) <Changmin Yi>
+* | | ce00bdd - [feat] change dependency of CoverCam. & Seatbelt (9 weeks ago) <Changmin Yi>
+* | | ba04ed4 - [feat] ThreadFlags re-order -> Error 203 solved (9 weeks ago) <Changmin Yi>
+* | | b2bee8e - [refac] rename MDFD_Data & change AssignWork def (9 weeks ago) <Changmin Yi>
+* | | 21f0b4d - [feat] Performance, DebugText detail add (9 weeks ago) <Changmin Yi>
+* | | 87879d0 - [feat] add print image pool (9 weeks ago) <Changmin Yi>
+* | | 7f7a8a8 - [feat] add M_CHECK_PERFORMANCE level & PrintPool (2 months ago) <Changmin Yi>
+* | | f69d280 - [feat] change error code for MDFD_FAILURE (2 months ago) <Changmin Yi>
+|/ /  
+* | c4f86d4 - [feat] add M_LOG_LEAST level (3 months ago) <Changmin Yi>
+* | 0221828 - [feat] unlock 10 fps lock - SetCamera_ImageFPS (3 months ago) <Changmin Yi>
+* | 467cd69 - [feat] add DebugText level (3 months ago) <Changmin Yi>
+* | 6247d43 - [bugfix] FLD Coordinates in another face problem (3 months ago) <changhyeon lee>
+* | 105c303 - [feat] rcface sx & sy value not fall below zero (3 months ago) <changhyeon lee>
+* | b12193e - [bugfix] Eye Width Values Error Solved (3 months ago) <yujin>
+* | 6884e33 - [bugfix] Eye ROI Crop Error Solved (3 months ago) <yujin>
+* | f9c461a - [feat] MD_ALG_FLD process not use MD_ALG_PSR flag (3 months ago) <changhyeon lee>
+* | a17ebce - [debug] add InputFrame DebugText (3 months ago) <Changmin Yi>
+* | 51bb58f - (tag: v2.0-beta2) [bugfix] ROI-DRO yaw test bugfix (3 months ago) <Changmin Yi>
+* | 47c5b65 - [feat] Faceid subview update compare mode (3 months ago) <changhyeon lee>
+* | 5c157cd - [feat] Add MVT9 PSR models (3 months ago) <yujin>
+* | 029b6c7 - [bugfix] mv Debug object into M_CODE4TOOL (3 months ago) <Changmin Yi>
+* |   9816755 - Merge branch 'dro_missing' into dev (3 months ago) <Changmin Yi>
+|\ \  
+| * | 9e41464 - [bugfix] missing commit 7488123 rollback (3 months ago) <Changmin Yi>
+* | |   b8883c7 - Merge branch 'beta2' into dev (3 months ago) <Changmin Yi>
+|\ \ \  
+| |/ /  
+|/| |   
+| * | 5a574a7 - (origin/beta2, beta2) [bugfix] __OPENCV_ALL_HPP__ not work (3 months ago) <Changmin Yi>
+| * | c1397d9 - Revert "[debug] print Process_FD image to output date all" (3 months ago) <Changmin Yi>
+| * | 816aa59 - [bugfix] FD Not found fix (3 months ago) <Changmin Yi>
+| * | 9758b05 - [debug] print Process_FD image to output date all (3 months ago) <Changmin Yi>
+| * | 4a5110b - [feat] PerformanceText coler & add DebugText more (3 months ago) <Changmin Yi>
+* | | 50f565d - [feat] Faceid subview update register mode (3 months ago) <changhyeon lee>
+* | | 41fa2e0 - [feat] Driver change work in Absence (4 months ago) <changhyeon lee>
+* | |   b48d9a2 - Merge branch 'dev' of 192.168.100.65:/home/git/MDSMLibrary into dev (4 months ago) <yujin>
+|\ \ \  
+| * | | 7d2cdc8 - [feat] Display face mode added (4 months ago) <changhyeon lee>
+| * | | ca3c47a - Merge branch 'beta2' into dev (4 months ago) <Changmin Yi>
+| |\| | 
+| | * | 2276ae1 - [feat] std::thread::id print warning remove (4 months ago) <Changmin Yi>
+| | * | 615b559 - [bugfix] no absence warning fix (4 months ago) <Changmin Yi>
+| | * | c76317c - [debug] add print detail in CheckONNXFiles (4 months ago) <Changmin Yi>
+* | | | 7488123 - [feat] Use the average value of Yaw (4 months ago) <yujin>
+|/ / /  
+* | | d8b20cd - [bugfix] Solved the threshold not being update (4 months ago) <yujin>
+* | | 91a0485 - [feat] Wear mask not work for YAWN (4 months ago) <changhyeon lee>
+* | | b601a56 - [feat] Modify the ROI ratio value (4 months ago) <yujin>
+* | |   d2e22da - Merge branch 'drowsiness' into dev (4 months ago) <yujin>
+|\ \ \  
+| * | | cf81b8c - (origin/drowsiness) [feat] ROI drowsiness histogram functions added (4 months ago) <yujin>
+| * | | 09a1433 - [feat] drowsiness EyeOpen saved in UpdateFD (5 months ago) <yujin>
+| * | | 2b4739f - [feat] FLD model update (nb10 -> nb4) (5 months ago) <yujin>
+* | | | d901925 - [feat] mask threshold & register occlusion added (4 months ago) <changhyeon lee>
+| |/ /  
+|/| |   
+* | | 7c66211 - (tag: v2.0-beta1) [docs] versoning beta1 (5 months ago) <Changmin Yi>
+* | | a6f7e55 - [docs] ResultSetup featureValid comment add (5 months ago) <Changmin Yi>
+* | | 6a7d7aa - [bugfix] Faceid Timeout count 20 to 120 fix (5 months ago) <changhyeon lee>
+* | |   c224286 - Merge branch 'setupFID' into dev (5 months ago) <changhyeon lee>
+|\ \ \  
+| * | | 5ba954b - (origin/setupFID, setupFID) [feat] integrate FID register into SetupFaceID (5 months ago) <Changmin Yi>
+* | | | 20a6bba - [feat] change Faceid compare callback (5 months ago) <changhyeon lee>
+* | | | 3c0d8a5 - [feat] add PSR Class Exception Implementation (5 months ago) <changhyeon lee>
+|/ / /  
+* | | 442b7cc - [feat] fix Yawn Threshold high=10, low=5 (5 months ago) <Changmin Yi>
+* | | ea5b509 - [feat] add FD Roi for Fast FD (5 months ago) <Changmin Yi>
+* | | 54adbcd - [bugfix] Driver change over count condition fix (5 months ago) <changhyeon lee>
+* | | ebbba0d - (tag: v2.0-beta) [feat] add version info (5 months ago) <Changmin Yi>
+* | | bcce89b - [bugfix] some func in LIB4TOOL -> move to outside (5 months ago) <Changmin Yi>
+* | | 4f80018 - [chore] clean up dirty comment and deprecated (5 months ago) <Changmin Yi>
+* | | 0591981 - [feat] FaceID histogram tracking & FaceID interval (5 months ago) <Changmin Yi>
+* | | 9b3a2fd - [feat] handle rcFace_FLD when FLD not found (5 months ago) <Changmin Yi>
+| | | * 3c2211d - (origin/hpe, hpe) [fail] add HPE anomaly detection but failed (5 months ago) <Changmin Yi>
+| |_|/  
+|/| |   
+* | | 639c09a - [feat] set partConf & filter wrong FLD (5 months ago) <Changmin Yi>
+* | | dbd8299 - [feat] handle FD ROI for each MVT9, 9P, 22 (5 months ago) <Changmin Yi>
+* | | 0d4ad42 - [feat] support nb4 PIPNet model (FLD) (5 months ago) <Changmin Yi>
+* | |   e450fb2 - Merge branch 'hpe' into dev (5 months ago) <Changmin Yi>
+|\ \ \  
+| * | | 458417c - [feat] add Drowsiness Warning (5 months ago) <Changmin Yi>
+* | | | 8117b9f - [bugfix] Driver change not work to FD_FAIL fix (5 months ago) <changhyeon lee>
+* | | | 1d4e4f2 - [chore] Faceid compare mode set simulator Facedir (5 months ago) <changhyeon lee>
+* | | | 9f86853 - Merge branch 'hpe' into dev (5 months ago) <changhyeon lee>
+|\| | | 
+| * | | 9ae9d1d - [feat] Yawn done (5 months ago) <Changmin Yi>
+| * | | 8f8fef4 - [feat] DIS, HeadDown warning done (5 months ago) <Changmin Yi>
+| * | | 8a340b2 - [feat] add HeadPos (5 months ago) <Changmin Yi>
+| |/ /  
+* / / a7b1c59 - [feat] Faceid Register Timeout & Driver Change run (5 months ago) <changhyeon lee>
+|/ /  
+* | 35e2998 - [feat] set M_CHECK_PERFORMANCE & change Tracing (6 months ago) <Changmin Yi>
+* | e1a547b - Merge branch 'v1.1.0037' into 'v2.0-alpha.1' (6 months ago) <Changmin Yi>
+|\| 
+| * 667d703 - (tag: v1.1.0037, master) [bugfix] v1.1.0037 PERCLOS bugfix (6 months ago) <Changmin Yi>
+| * 677a1e6 - (tag: v1.1.0035) [feat] v1.1.0035 Headdown angle fix (6 months ago) <Changmin Yi>
+| * 51c56c4 - (tag: v1.1.0033) [feat] v1.1.0033 glasses PERCLOS improve (6 months ago) <Changmin Yi>
+| * 9ee532a - (tag: v1.1.0031) [bugfix] version print typo (6 months ago) <Changmin Yi>
+| * 278531d - [feat] fix MDSMLibVersion.cpp (6 months ago) <Changmin Yi>
+| * 83a805d - [feat] v1.1.0031 m_bClearedPERCLOS add (6 months ago) <Changmin Yi>
+| *   497ee89 - Merge branch 'puxroi' (6 months ago) <Changmin Yi>
+| |\  
+| | * f017f60 - (origin/puxroi) [test] PUX roi test for MVT-9 Bus video (7 months ago) <Changmin Yi>
+| * |   fb9513e - Merge branch 'ciga_scenario' (6 months ago) <Changmin Yi>
+| |\ \  
+| | * | d3dd3fb - (origin/ciga_scenario) [chore] MDSMLibResult.cpp save UTF-8 & add puml (7 months ago) <Changmin Yi>
+| | * | 58086b0 - [feat] ciga scenario test (7 months ago) <Changmin Yi>
+| | |/  
+| * / 20ac00a - (tag: v1.1.0027) [feat] v1.1.0027 add PERCLOS, Stop, MVT-9, ROI (6 months ago) <Changmin Yi>
+| |/  
+* | bba8995 - (tag: v2.0-alpha.1) Merge branch 'fast_fd' (6 months ago) <changhyeon lee>
+* | baa600b - (origin/fast_fd, fast_fd) [feat] Fast FD done (6 months ago) <Changmin Yi>
+* | 78cdbfb - [feat] divide Process_FaceDetect into FD,FLD,HPE (6 months ago) <Changmin Yi>
+* | a42d749 - [feat] add tracer & PerformanceText (6 months ago) <Changmin Yi>
+* | 006e959 - [feat] apply ResultFlags and rem 0x00FF**FF (6 months ago) <Changmin Yi>
+* | b0d5400 - 癤?bugfix] MD_ALG_FID changed - PSR,FID not run bug (6 months ago) <Changmin Yi>
+* | 021d40c - 癤?docs] rm wrong text in gitmessage (6 months ago) <Changmin Yi>
+* |   9610529 - Merge branch 'dev' into fld_merge (6 months ago) <Changmin Yi>
+|\ \  
+| * | 799ea82 - [feat] Add Driver Change mode (6 months ago) <changhyeon lee>
+* | | d5ec217 - (origin/fld_merge, fld_merge) 癤?feat] FLD multi-thread bugfix - build done (6 months ago) <Changmin Yi>
+* | | 180de1e - 癤?feat] FLD multi-thread & integrated by FD (build fail) (6 months ago) <Changmin Yi>
+* | | ba4da35 - [chore] Korean comment file save as UTF-8 with BOM (6 months ago) <Changmin Yi>
+* | | d66a62c - [feat] v40_dsm suport fix (6 months ago) <Changmin Yi>
+|/ /  
+* | f29032a - [chore] includes mv, rm, rename (6 months ago) <Changmin Yi>
+* | c062569 - [debug] gitignore debug files (6 months ago) <Changmin Yi>
+* | 3684654 - [chore] Faceid mask onnx add & PSR Mask class code fix (6 months ago) <changhyeon lee>
+* | fc524de - [feat] PSR Mask Class & FID Mask Register & Compare mode added (6 months ago) <changhyeon lee>
+* |   050dcac - Merge branch 'fid_reg' into dev (7 months ago) <Changmin Yi>
+|\ \  
+| * | 20e960b - (origin/fid_reg, fid_reg) [feat] MDFID register add (7 months ago) <Changmin Yi>
+* | | 61affcd - [feat] FID Face Margin Add & Cos distance Add (7 months ago) <changhyeon lee>
+|/ /  
+* |   948ee98 - [feat] FID GhostFaceNetv1 model apply & merge to fd_pad branch (7 months ago) <changhyeon lee>
+|\ \  
+| * | 98f92e8 - (origin/fd_pad, fd_pad) [feat] add FD padding w/o opencv (7 months ago) <Changmin Yi>
+| * | b458469 - [feat] FD add padding with opencv (7 months ago) <Changmin Yi>
+* | | 50fe84a - [feat] FID GhostFaceNetv1 model apply (7 months ago) <changhyeon lee>
+|/ /  
+* | cf10651 - [feat] InitDriverMDFID rollback (dummy disable) (7 months ago) <Changmin Yi>
+* | 551073c - Merge branch 'master' into dev (7 months ago) <Changmin Yi>
+|\| 
+| * 000d002 - (tag: v1.1.0022) [chore] 7SE22 train add & v40_dsm remove (8 months ago) <Changmin Yi>
+* | b87cf07 - (origin/dev_test) [test] test DebugText on (9 months ago) <Changmin Yi>
+* | ac6e7c8 - [test] comment HPE & dummy FID for MDSM test (9 months ago) <Changmin Yi>
+* | 257943a - [style] change .gitmessage utf-8-bom to utf-8 (9 months ago) <Changmin Yi>
+* | f55f594 - 癤?test] rm dirty DebugText for MDSM test (9 months ago) <Changmin Yi>
+* | 543ded9 - 癤?chore] PIPLiteV1_yujin.onnx apply (9 months ago) <Changmin Yi>
+* | 49823d4 - (origin/rmpux, rmpux) 癤?refac] MDFID refac (9 months ago) <Changmin Yi>
+* |   e5592df - Merge branch 'fid' into rmpux (9 months ago) <Changmin Yi>
+|\ \  
+| * | 4eb24d6 - (origin/fid, fid) [feat] FID MDSMLibary & MDSMSimulator can Compare Mode Operation (9 months ago) <changhyeon lee>
+| * | 6fa0f1f - [feat] apply callbackRequestMDFIDs (9 months ago) <Changmin Yi>
+| * | 5105fbd - [feat] FID MDSMLibrary & MDSMSimulator middle update (9 months ago) <changhyeon lee>
+| * | 88407e4 - [feat] FID Libaray upgrade middle update (9 months ago) <changhyeon lee>
+| * | 98741a6 - [feat] FID Library middle update (9 months ago) <changhyeon lee>
+| |/  
+* | b8a7736 - 癤?chore] debug text change & add new FD 480 model (9 months ago) <Changmin Yi>
+* | 1cc12d7 - 癤?feat] 20230717 rmpux (9 months ago) <Changmin Yi>
+* | ecbf44d - 癤?feat] FD multithreading (9 months ago) <Changmin Yi>
+| | * 6e81da3 - (origin/fdlib) [test] 480p & 240p onboard inference time check (7 months ago) <Changmin Yi>
+| | | * 5ba0d55 - (fd_thread) 癤?feat] FD multithreading (9 months ago) <Changmin Yi>
+| |_|/  
+|/| |   
+* | | 031a8b5 - [docs] divide IPC & MDSMLibrary puml, add Flags2 (9 months ago) <Changmin Yi>
+* | | 28ff204 - [docs] add IPC puml & PFID_Data.puml (10 months ago) <Changmin Yi>
+* | |   9245416 - Merge branch 'hpelib' into dev (10 months ago) <Changmin Yi>
+|\ \ \  
+| * | | fa46523 - [chore] crlf to lf - hpe (10 months ago) <Changmin Yi>
+| * | | f9a1b86 - [bugfix] UpdateFD Queue Out of range (10 months ago) <Changmin Yi>
+| * | | e2a5000 - [feat] add vs workspace & puml (10 months ago) <Changmin Yi>
+| * | | b42a971 - [bugfix] FLD time print bug (11 months ago) <Changmin Yi>
+| * | | 00bec22 - [chore] change mdfd onnx model name -> lite (11 months ago) <Changmin Yi>
+| * | | c33028e - [bugfix] HPE done (11 months ago) <Changmin Yi>
+| * | | fd3d140 - [feat] add opencv base solvePnP - fail (12 months ago) <Changmin Yi>
+* | | |   26cfb76 - Merge branch 'fldlib' into dev (10 months ago) <Changmin Yi>
+|\ \ \ \  
+| |_|/ /  
+|/| | |   
+| * | | 115175d - (origin/fldlib) [chore] crlf to lf (10 months ago) <Changmin Yi>
+| * | | 7edf4bf - [chore] add Debug flags for A40 & FD,FLD test (10 months ago) <Changmin Yi>
+| * | | 526c78d - (fldlib) [bugfix] FLD time print bug (11 months ago) <Changmin Yi>
+| * | | 4a01f1b - [chore] change mdfd onnx model name -> lite (11 months ago) <Changmin Yi>
+| |/ /  
+| * | 04be3ca - [feat] add UpdateFLD & bugfix argmax (12 months ago) <Changmin Yi>
+| * | 277936d - [bugfix] AssingWork re-define, comment out memset FD,FLD_Data (12 months ago) <Changmin Yi>
+| * | fd2d14e - [feat] add FLD pipnet lite - fail (12 months ago) <Changmin Yi>
+| * | cded0ee - [refac] add comment ProcessFD & define __MDFLD (12 months ago) <Changmin Yi>
+| |/  
+| * ba60089 - (fdlib) [bugfix] prevent batch_size == -1 (12 months ago) <Changmin Yi>
+| * a7f4088 - [feat] add simple UpdateFD for box view (12 months ago) <Changmin Yi>
+| * 48f078a - [bugfix] 3ch input Normalize bug (1 year ago) <Changmin Yi>
+| * 719f2fd - [bugfix] FD rRsult.bboxes 0 init bug (1 year ago) <Changmin Yi>
+| * 92d9640 - [feat] MDFD - FaceBoxesV2 first commit (1 year ago) <Changmin Yi>
+* | 0abfed7 - [feat] change ROMfiles to submodule (10 months ago) <Changmin Yi>
+* | 29f8e4b - (tag: v1.1.0021) [refactor] mv release sh into v40_dsm (10 months ago) <Changmin Yi>
+* | 5990d44 - [feat] issue #1822 DSM off snapshot, #1823 DIS off auto-cal solve (10 months ago) <Changmin Yi>
+* | 1cb3049 - [feat] add vs workspace & puml (10 months ago) <Changmin Yi>
+* |   706d47c - Merge branch 'master' into dev (10 months ago) <Changmin Yi>
+|\ \  
+| * | 69b75e8 - (tag: v1.1.0017, origin/psrlib, psrlib) [feat] 20230331 128x update (1 year ago) <Changmin Yi>
+| |/  
+* | 369877f - [feat] fix strrchr & add M_DEBUG_TEXT in Makefile (1 year ago) <Changmin Yi>
+* | 73927f9 - [feat] fix DebugText when w/o M_DEBUG_TEXT (1 year ago) <Changmin Yi>
+* | 86b0fa0 - [chore] fix gitattributes & renormalize (1 year ago) <Changmin Yi>
+* | be90b9f - [feat] add DebugText when M_DEBUG_TEXT on (1 year ago) <Changmin Yi>
+|/  
+* 8a3bb84 - [feat] add .gitattributes for crlf to lf (1 year, 1 month ago) <Changmin Yi>
+* 7dd25ba - (tag: v1.1.0015) [feat] seatbelt angle adj. & mask + smo ?덉쇅 泥섎━ (1 year, 1 month ago) <Changmin Yi>
+| *   3f65e5d - (origin/psrlib-test-board) Merge branch 'psrlib_dev' into psrlib-test-board (1 year, 1 month ago) <Changmin Yi>
+| |\  
+| | * 800cf31 - (origin/psrlib_dev, psrlib_dev) [test] inference time print for dev (1 year, 1 month ago) <Changmin Yi>
+| |/  
+|/|   
+* | 133c00d - [chore] mdod_20230324_aihub+htfix_3ch_dw_adw.onnx (1 year, 1 month ago) <Changmin Yi>
+* | fc55740 - (tag: v1.1.0011) [feat] PSR delay reduce, .dat config add (1 year, 1 month ago) <Changmin Yi>
+| * e92309e - [test1] add Makefile_v2 for hf but failed (1 year, 1 month ago) <Changmin Yi>
+| * 7d28936 - [test3] add CMakelists.txt and test3_pc version (1 year, 1 month ago) <Changmin Yi>
+| *   521dafa - Merge branch 'psrlib' into psrlib-test-board (1 year, 1 month ago) <Changmin Yi>
+| |\  
+| |/  
+|/|   
+* | 8de6246 - (tag: v1.1.0007) [feat] MDSM v1.1.0007 Release (1 year, 1 month ago) <Changmin Yi>
+* | 3a255c6 - [chore] add LicenseInfo_win32.h (1 year, 1 month ago) <Changmin Yi>
+* | fff72b0 - (tag: v1.1.0003) [feat] adamw onnx model update, make.sh fix (1 year, 1 month ago) <Changmin Yi>
+* | 53885fd - [chore] change PUX library headers & License (1 year, 1 month ago) <Changmin Yi>
+* | be0772f - [tune] ciga score bias remove (1 year, 1 month ago) <Changmin Yi>
+* | 8eedf00 - (tag: v1.1.0001) [feat] applied new psr / MDSM v1.1 release (1 year, 2 months ago) <Changmin Yi>
+| * 36a6723 - [test2] change make to cmake for test2 (1 year, 1 month ago) <Changmin Yi>
+| * 4b3b06f - [test4] resize_test 2 / short -> unsiged short (1 year, 1 month ago) <Changmin Yi>
+| * bf28f5f - [test4] test unloop (1 year, 2 months ago) <Changmin Yi>
+| * 12f4b28 - [test4] fix un-match problem int/float (1 year, 2 months ago) <Changmin Yi>
+| * ba581b9 - [test4] add test4 for neon resize_test (1 year, 2 months ago) <Changmin Yi>
+| * a9ff931 - [test3] add test3 RunOrt.cpp (1 year, 2 months ago) <Changmin Yi>
+| * cf876dd - [feat] add test2 (neon) & test1 fail hf (1 year, 2 months ago) <Changmin Yi>
+| * c08cf42 - [backup] add Makefile_pc backup (1 year, 2 months ago) <Changmin Yi>
+| | * f187cb8 - (origin/psrlib-hcpfix) [test] clock() time check (1 year, 2 months ago) <Changmin Yi>
+| |/  
+|/|   
+* | eb6937e - [fix] applied 6 -> 3 categoires change (1 year, 2 months ago) <Changmin Yi>
+| | * 3d06d1f - (origin/psrlib-test-board-so) [feat] try test.so build -> failed (1 year, 2 months ago) <Changmin Yi>
+| |/  
+| * e300bc1 - [feat] add -static option -> no dependency done (1 year, 2 months ago) <Changmin Yi>
+| * 650471d - [feat] change to arm-linux-gnueabi-g++ (1 year, 2 months ago) <Changmin Yi>
+| * 58d380a - (origin/psrlib-test-pc) [feat] add test Makefile (1 year, 2 months ago) <Changmin Yi>
+|/  
+* cf03fb1 - [feat] support ort file read (1 year, 3 months ago) <Changmin Yi>
+* 70f6d54 - [feat] add rgb onnx model acceptability but useless (1 year, 4 months ago) <Changmin Yi>
+* 55868c9 - [refac] change MPSR comment format (1 year, 4 months ago) <Changmin Yi>
+* 2291e5a - [feat] mv v40 external_toolchain (1 year, 5 months ago) <Changmin Yi>
+* d3f5862 - [feat] change input size upto onnx model automatically (1 year, 5 months ago) <Changmin Yi>
+* 245cb3d - [feat] rebase conflict remove again ? (1 year, 5 months ago) <Changmin Yi>
+* 9c86d5e - [feat] add onnxruntime, match with psr branch (1 year, 5 months ago) <Changmin Yi>
+* 927ec19 - [feat] add gitignore (1 year, 5 months ago) <Changmin Yi>
+* 2ecd925 - [feat] intial commit MDSMLibrary (1 year, 5 months ago) <git>

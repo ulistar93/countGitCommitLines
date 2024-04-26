@@ -1,0 +1,2 @@
+#{'Changmin Yi': 101965, 'park': 5728, 'yujin': 4608, 'changhyeon lee': 7885, 'x': 0, 'git': 9185}
+{'Changmin Yi': 43525, 'park': 5728, 'yujin': 4608, 'changhyeon lee': 7885, 'x': 0, 'git': 9185}
